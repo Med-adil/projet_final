@@ -1,0 +1,109 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+    .custom-btn {
+        width: 120px;
+        height: 30px;
+      
+      
+        border: 2px solid #000;
+       
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+       
+      }
+    h1 {
+        font-family: Quicksand;
+      }
+    .btn-15 {
+        background: #000;
+       color: #fff;
+       z-index: 1;
+     }
+     .btn-15:after {
+       position: absolute;
+       content: "";
+       width: 0;
+       height: 100%;
+       top: 0;
+       right: 0;
+       z-index: -1;
+        background: #e0e5ec;
+       transition: all 0.3s ease;
+         border-radius: 0.25rem;
+      
+     
+     }
+     
+     .btn-15:hover {
+       color: #000;
+     
+     }
+     .btn-15:hover:after {
+       left: 0;
+       width: 100%;
+     }
+     .btn-15:active {
+       top: 2px;
+     }
+
+
+     </style
+     <body>
+<div class="bg-black h-20">
+    <div class="grid grid-cols-3 gap-12 justify-items-center">
+      <h1
+        class="mt-7 text-lg custom-btn btn-15 ml-8 grid justify-items-center text-white"
+      >
+        <a href="">Devises</a>
+      </h1>
+
+      <h1
+        class="mt-7 text-lg custom-btn btn-15 ml-8 grid justify-items-center text-white"
+      >
+        <a href="{{path('project-create')}}">Vendre</a>
+      </h1>
+      <h1
+        class="mt-7 text-lg custom-btn btn-15 ml-8 grid justify-items-center text-white"
+      >
+        <a href="{{path('app_login')}}">Se connecter </a>
+      </h1>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+<div class="border m-16 grid grid-cols-3 border-black">
+
+  <div class="grid justify-items-center border border-black"> Pays
+    <ul>
+      <div class='grid m-2 border border-black rounded-sm grid-cols-8'> <img class="h-6 m-2" src='https://www.xe.com/static-images/usd.static.e8b657d1161a08a32415d284a8e1dc89.svg'>
+        <li class="p-2">EtasUnis
+        </li>
+      </div>
+      <div class='grid m-2 border border-black rounded-sm grid-cols-8'> <img class="h-6 m-2" src='https://www.xe.com/static-images/chf.static.eb65ed7418d2ad8703a7c9c54467b785.svg'>
+        <li class="p-2">Suisse
+        </li>
+      </div>
+      <div class='grid m-2 border border-black rounded-sm grid-cols-8'> <img class="h-6 m-2" src='https://www.xe.com/static-images/gbp.static.da0ca3d1b6d9e74642276a0ea3cde603.svg'>
+        <li class="p-2">RoyaumeUni
+        </li>
+      </div>
+  </div>
+  <div class="border grid justify-items-center border-black"> Devise
+    <li class="p-2 m-2 border border-black rounded-sm">Dollar</li>
+
+    <li class=" m-2 border border-black rounded-sm p-2">Franc suisse</li>
+    <li class=" m-2 border border-black rounded-sm p-2">Pound</li>
+  </div>
+  <div class="border grid justify-items-center border-black">Taux de change
+    <li class="p-2">0,99293446 Euro</li>
+    <li class="p-2">1,0057805 Euro</li>
+    <li class="p-2">1,1524011 Euro</li>
+  </div>
+
+</div>
+</body>

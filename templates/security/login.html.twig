@@ -1,0 +1,32 @@
+{% block body %}
+<script src="https://cdn.tailwindcss.com"></script>
+    {%  if error %}
+        <div>{{ error.messageKey|trans(error.messageDate, 'security') }}</div>
+    {% endif %}
+    
+
+
+    
+
+<div class=" w-80 h-88 flex grid ml-48  " >  
+
+
+    <form action="{{ path('app_login') }}" methode="post">
+    <div class=" grid mt-2 justify-items-center">  
+        <h1 class="underline font-bold police "> Email </h1> </div>
+    <div> <input class=" ml-8 mb-12 border border-black" type="text" id="username" name="_username" value="{{ last_username }}" >
+    </div> 
+    
+    
+    <div class="grid  justify-items-center">  
+         <h1 class="underline font-bold police  "> Mot de passe</h1> </div> <div> 
+    <input class=" police ml-8 mb-8 border border-black" type="password" id="password" name="_password" >
+    </div>  
+    
+    
+    
+    <div class=" grid justify-items-center " > 
+    <button type="submit" class=" cursor-pointer border border-black p-2 grid justify-items-center font-bold"  > Se connecter </button>
+    </div> 
+    </form>
+    {% endblock %}
